@@ -6,14 +6,25 @@
 		<servlet-name>TP1</servlet-name>
 		<servlet-class>tp1.Tp1Servlet</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletPremiereJSP</display-name>
+		<servlet-name>ServletPremiereJSP</servlet-name>
+		<servlet-class>tp1.ServletPremiereJSP</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>TP1</servlet-name>
 		<url-pattern>/urlTP1</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletPremiereJSP</servlet-name>
+		<url-pattern>/ServletPremiereJSP</url-pattern>
+	</servlet-mapping>
 	
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>formPremiereJSP.html</welcome-file>
 	</welcome-file-list>
 
 </web-app>
