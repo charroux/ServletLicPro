@@ -10,5 +10,8 @@
 
 	Bonjour <%=request.getAttribute("nom") %>, tu as <%=request.getAttribute("age") %> ans.
 
+	<br>
+	<a href="index.html">Home</a>
+
 </body>
 </html>

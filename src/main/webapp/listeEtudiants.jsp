@@ -14,5 +14,9 @@
 			l'etudiant <c:out value="${evaluation.nom}" /> a eu <c:out value="${evaluation.note}" /><br>
 		</c:forEach>
 		
+	<br>
+	<a href="index.html">Home</a>
+
+		
 </body>
 </html>

@@ -10,5 +10,9 @@
 <body>
 	<jsp:useBean id="etudiant" class="tp1.Evaluation" scope="request"/>
 	L'étudiant <c:out value="${etudiant.nom}"></c:out> a obtenu <c:out value="${etudiant.note}"></c:out>
+	
+	<br>
+	<a href="index.html">Home</a>
+	
 </body>
 </html>
