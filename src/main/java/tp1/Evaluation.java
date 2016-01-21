@@ -1,9 +1,21 @@
 package tp1;
 
 public class Evaluation {
+
 	String nom;
-	String note;
-	
+	float note;
+
+	public Evaluation() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Evaluation(String nom, float note) {
+		super();
+		this.nom = nom;
+		this.note = note;
+	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -11,13 +23,13 @@ public class Evaluation {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
-	public String getNote() {
+
+	public float getNote() {
 		return note;
 	}
-	public void setNote(String note) {
+
+	public void setNote(float note) {
 		this.note = note;
 	}
-	
-	
 
 }

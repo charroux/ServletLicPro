@@ -32,7 +32,8 @@ public class ServletEtudiant extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String nom = request.getParameter("nom");
-		String note = request.getParameter("note");
+		String n = request.getParameter("note");
+		float note = Float.parseFloat(n);
 		Evaluation evaluation = new Evaluation();
 		evaluation.setNom(nom);
 		evaluation.setNote(note);
