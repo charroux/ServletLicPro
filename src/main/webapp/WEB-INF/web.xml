@@ -27,6 +27,20 @@
 		<servlet-name>ListeEtudiantsServlet</servlet-name>
 		<servlet-class>tp1.ListeEtudiantsServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Servlet1</display-name>
+		<servlet-name>Servlet1</servlet-name>
+		<servlet-class>tp2.Servlet1</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Servlet2</display-name>
+		<servlet-name>Servlet2</servlet-name>
+		<servlet-class>tp2.Servlet2</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>TP1</servlet-name>
@@ -43,6 +57,14 @@
 	<servlet-mapping>
 		<servlet-name>ListeEtudiantsServlet</servlet-name>
 		<url-pattern>/urlListeEtudiants</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Servlet1</servlet-name>
+		<url-pattern>/servlet1URL</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Servlet2</servlet-name>
+		<url-pattern>/servlet2URL</url-pattern>
 	</servlet-mapping>
 	
 	<welcome-file-list>
