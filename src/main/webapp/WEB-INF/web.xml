@@ -67,6 +67,16 @@
 		<url-pattern>/servlet2URL</url-pattern>
 	</servlet-mapping>
 	
+	<servlet-mapping>
+		<servlet-name>ServletCookie</servlet-name>
+		<url-pattern>/urlServletCookie</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletCookie</servlet-name>
+		<servlet-class>tp3.ServletCookie</servlet-class>
+	</servlet>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
