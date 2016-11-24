@@ -1,5 +1,10 @@
 # ServletLicPro
 
+Créer projet :
+    
+    Eclipse JEE developper : File -> new -> other -> web -> Dynamic Web Project ->
+        Apache Tomcat 7 (target runtime) -> next ... -> finish
+
 Projet Gradle :
 
     installation de Gradle : http://gradle.org/
