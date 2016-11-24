@@ -1,6 +1,11 @@
 # ServletLicPro
 
-Projet Gradle :
+Créer projet :
+    
+    Eclipse JEE developper : File -> new -> other -> web -> Dynamic Web Project ->
+        Apache Tomcat 7 (target runtime) -> next ... -> finish
+
+Créer un projet avec Gradle (recommandée):
 
     installation de Gradle : http://gradle.org/
 
@@ -12,4 +17,4 @@ Projet Gradle :
 
     3°/ Tester le projet via Jetty avec la commande "gradle jettyRunWar" et utiliser un navigateur
 
-    4°/ optinel : convertir le projet en un projet Eclipse avec la commande "gradle eclipse" puis importer le projet dans Eclipse
+    4°/ optionnel : convertir le projet en un projet Eclipse avec la commande "gradle eclipse" puis importer le projet dans Eclipse
