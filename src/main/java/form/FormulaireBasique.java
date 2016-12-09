@@ -9,9 +9,15 @@ import javax.servlet.http.HttpServletResponse;
 
 public class FormulaireBasique extends HttpServlet{
 
-	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String s = req.getParameter("nom");
+	public FormulaireBasique() {
+		super();
+	}
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String s = request.getParameter("nom");
 		System.out.println("nom=" + s);
 	}
 
