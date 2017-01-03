@@ -13,6 +13,13 @@
 		<servlet-name>ServletVersPremiereJSP</servlet-name>
 		<servlet-class>form.ServletVersPremiereJSP</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletEtudiant</display-name>
+		<servlet-name>ServletEtudiant</servlet-name>
+		<servlet-class>form.ServletEtudiant</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>form</servlet-name>
@@ -21,6 +28,10 @@
 	<servlet-mapping>
 		<servlet-name>ServletVersPremiereJSP</servlet-name>
 		<url-pattern>/urlServletPremiereJSP</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletEtudiant</servlet-name>
+		<url-pattern>/urlEtudiant</url-pattern>
 	</servlet-mapping>
 		
 	<welcome-file-list>
