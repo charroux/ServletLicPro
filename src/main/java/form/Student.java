@@ -2,26 +2,25 @@ package form;
 
 public class Student {
 
-	String value;
-	
-	public Student(String value) {
-		this.value = value;
+	String name;
+
+	public Student(String name) {
+		super();
+		this.name = name;
 	}
-	
+
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public String getValue() {
-		return value;
+	public String getName() {
+		return name;
 	}
 
-	public void setValue(String value) {
-		this.value = value;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	
-	
-
 }

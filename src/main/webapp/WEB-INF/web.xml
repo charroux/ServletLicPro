@@ -27,6 +27,13 @@
 		<servlet-name>ServletListeEtudiants</servlet-name>
 		<servlet-class>form.ServletListeEtudiants</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ServletCreationFormulaire</display-name>
+		<servlet-name>ServletCreationFormulaire</servlet-name>
+		<servlet-class>form.ServletCreationFormulaire</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>form</servlet-name>
@@ -42,7 +49,11 @@
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>ServletListeEtudiants</servlet-name>
-		<url-pattern>/ServletListeEtudiants</url-pattern>
+		<url-pattern>/listEtudiantsURL</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletCreationFormulaire</servlet-name>
+		<url-pattern>/urlServletCreationJSP</url-pattern>
 	</servlet-mapping>
 		
 	<welcome-file-list>

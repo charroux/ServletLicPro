@@ -12,13 +12,13 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ServletListeEtudiants
  */
-public class ServletListeEtudiants extends HttpServlet {
+public class ServletCreationFormulaire extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ServletListeEtudiants() {
+    public ServletCreationFormulaire() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class ServletListeEtudiants extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		getServletContext().getRequestDispatcher("/formulaireCreeDynamiquement.jsp").forward(request, response);
 	}
 
 	/**
