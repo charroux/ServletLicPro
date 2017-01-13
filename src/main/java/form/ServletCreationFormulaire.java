@@ -26,7 +26,10 @@ public class ServletCreationFormulaire extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {		 
+		String s = request.getParameter("nbPersonnes");
+		int nbPersonnes = Integer.parseInt(s);
+		request.setAttribute("nombrePersonnes", nbPersonnes);
 		getServletContext().getRequestDispatcher("/formulaireCreeDynamiquement.jsp").forward(request, response);
 	}
 

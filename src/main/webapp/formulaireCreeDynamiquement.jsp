@@ -8,7 +8,26 @@
 </head>
 <body>
 
-Coucou
+<form method="post" action="listEtudiantsURL">
+	<table>
+	
+	
+	<% int nombrePersonnes = (Integer)request.getAttribute("nombrePersonnes"); %>
+	
+	<% for(int i=0; i<nombrePersonnes; i++){ %>
+	
+		<tr>
+			<td>
+				nom : <input type="text" name="nom<%=i%>">
+			</td>
+		</tr>
+	 
+	<% } %>
+	
+	<input type="submit">
+	
+	</table>
+</form>
 
 </body>
 </html>
