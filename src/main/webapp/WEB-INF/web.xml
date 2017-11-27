@@ -5,7 +5,18 @@
 	
 		
 	<welcome-file-list>
+		<welcome-file>formulaire.html</welcome-file>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>formulaire</servlet-name>
+		<servlet-class>perso.Formulaire</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>formulaire</servlet-name>
+		<url-pattern>/urlFormulaire</url-pattern>
+	</servlet-mapping>
 
 </web-app>
