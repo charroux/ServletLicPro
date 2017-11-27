@@ -1,5 +1,5 @@
 apply plugin: 'war' 
-apply plugin: 'jetty'
+// apply plugin: 'jetty'
 apply plugin: 'eclipse' 
 apply plugin: 'eclipse-wtp'
 
@@ -8,7 +8,7 @@ repositories {
     mavenCentral()
 }
 
-httpPort = 9000
+// httpPort = 9000
 
 targetCompatibility = '1.7'
 sourceCompatibility = '1.7'
