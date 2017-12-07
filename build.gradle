@@ -2,7 +2,8 @@ apply plugin: 'war'
 // apply plugin: 'jetty'
 apply plugin: 'eclipse' 
 apply plugin: 'eclipse-wtp'
-
+apply plugin: 'war' 
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
 repositories {
     mavenCentral()
