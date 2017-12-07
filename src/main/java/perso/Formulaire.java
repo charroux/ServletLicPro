@@ -16,6 +16,11 @@ public class Formulaire extends HttpServlet{
 		
 		String age = req.getParameter("age");
 		System.out.println("age = " + age);
+		
+		//resp.sendRedirect("reponseStatique.html");
+		req.setAttribute("nom", nom);
+		req.setAttribute("age", age);
+		getServletContext().getRequestDispatcher("/reponseDynamique.jsp").forward(req, resp);
 	}
 	
 }
