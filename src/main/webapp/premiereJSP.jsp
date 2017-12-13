@@ -4,12 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Reponse dynamique</title>
+<title>Insert title here</title>
 </head>
 <body>
 
-	Nom : <%=request.getAttribute("nom") %><br>
-	Age : <%=request.getAttribute("age") %><br>
+	Bonjour <%=request.getAttribute("name") %>
 
 </body>
 </html>

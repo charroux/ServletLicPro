@@ -9,10 +9,10 @@
 </head>
 <body>
 
-	<jsp:useBean id="personne" class="perso.Personne" scope="request" />
+	<jsp:useBean id="personne" class="tp3.Personne" scope="request" />
 	
 	nom : <c:out value="${personne.nom}" /><br>
-	prenom : <c:out value="${personne.age}" />
+	prenom : <c:out value="${personne.prenom}" />
 
 </body>
 </html>

@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
 <display-name>Data</display-name>
-
-	
 		
 	<welcome-file-list>
-		<welcome-file>formulaire.html</welcome-file>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 	
 	<servlet>
-		<servlet-name>formulaire</servlet-name>
-		<servlet-class>perso.Formulaire</servlet-class>
+		<servlet-name>ServletPremierFormulaire</servlet-name>
+		<servlet-class>tp1.PremierFormulaire</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletPremierFormulaire</servlet-name>
+		<url-pattern>/urlPremierFormulaire</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PremiereJSP</servlet-name>
+		<servlet-class>tp2.ServletPremiereJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PremiereJSP</servlet-name>
+		<url-pattern>/urlPremiereJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletBean</servlet-name>
+		<servlet-class>tp3.ServletBean</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>formulaire</servlet-name>
-		<url-pattern>/urlFormulaire</url-pattern>
+		<servlet-name>ServletBean</servlet-name>
+		<url-pattern>/urlFormBean</url-pattern>
 	</servlet-mapping>
 
 </web-app>

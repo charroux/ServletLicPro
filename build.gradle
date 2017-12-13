@@ -1,5 +1,4 @@
 apply plugin: 'war' 
-// apply plugin: 'jetty'
 apply plugin: 'eclipse' 
 apply plugin: 'eclipse-wtp'
 apply plugin: 'war' 
@@ -8,8 +7,6 @@ apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.p
 repositories {
     mavenCentral()
 }
-
-// httpPort = 9000
 
 targetCompatibility = '1.7'
 sourceCompatibility = '1.7'
