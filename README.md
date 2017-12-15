@@ -1,26 +1,31 @@
 # ServletLicPro
 
-Créer projet :
-    
-    Eclipse JEE developper : File -> new -> other -> web -> Dynamic Web Project ->
-        Apache Tomcat 7 (target runtime) -> next ... -> finish
 
-Créer un projet avec Gradle (recommandée):
+Créer un projet avec Gradle :
+	
+	télécharger le projet
+	
+	décompresser le projet
+	
+	ouvrir une fenêtre de commande dans le dossier du projet
+	
+	compiler le projet avec Gradle :
+	
+		- sous Linux : ./gradlew build  	(faire éventuellement un chmod 777 gradlew si gradlew n'est pas exécutable)
+		- sous Windows : gradlew build
+		
+	convertir le projet en un projet Eclipse : 
 
-    installation de Gradle : http://gradle.org/
+		- sous Linux : ./gradlew eclipse
+		- sous Windows : gradlew eclipse
 
-    utilisation de gradle :
-
-    1°/ télécharger le projet à partir de ce site
-
-    2°/ construire le projet avec la commande "gradle build"
-
-    3°/ Tester le projet via Jetty avec la commande "gradle jettyRunWar" et utiliser un navigateur
-
-    4°/ optionnel : convertir le projet en un projet Eclipse avec la commande "gradle eclipse" puis importer le projet dans Eclipse (File -> import -> existing project into Eclipse -> browse ...)
-    
-    5°/ Pour une utilisation sous Eclipse : télécharger et décompresser apache/tomcat 7 version binaire, sous Eclipse File : Window -> preferences -> server -> runtime environment -> add (aller chercher apache/tomcat), pour lancer le serveur : clic droit sur le projet -> Run as ->  Run on server -> next ...
-    
+    	importer le projet sous Eclipse : File -> Import -> General -> Existing project into Eclipse...
+	
+	lancer le projet (en utilsant le serveur web Jetty) :
+	
+		- sous Linux : ./gradlew appRun
+		- sous Windows : gradlew appRun
+		
 Au démarrage du projet, une page d'accueil s'affiche. Le menu accède à :
 
     Une Servlet qui récupère les données du formulaire et les affiche dans le console.
