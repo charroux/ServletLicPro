@@ -33,5 +33,17 @@
 		<servlet-name>ServletBean</servlet-name>
 		<url-pattern>/urlFormBean</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletListBeans</servlet-name>
+		<servlet-class>tp4.ServletListBeans</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ServletListBeans</servlet-name>
+		<url-pattern>/urlListBeans</url-pattern>
+	</servlet-mapping>
+	
+	
 
 </web-app>
