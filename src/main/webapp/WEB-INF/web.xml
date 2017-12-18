@@ -44,6 +44,14 @@
 		<url-pattern>/urlListBeans</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+		<servlet-name>ServletCreationFormulaire</servlet-name>
+		<servlet-class>tp5.ServletCreationFormulaire</servlet-class>
+	</servlet>
 	
+	<servlet-mapping>
+		<servlet-name>ServletCreationFormulaire</servlet-name>
+		<url-pattern>/urlServletCreationFormulaire</url-pattern>
+	</servlet-mapping>
 
 </web-app>
