@@ -13,7 +13,10 @@ public class ServletCreationFormulaire extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println("ok");
+		String n = req.getParameter("nbEtudiants");
+		int nbEtudiants = Integer.parseInt(n);
+		req.setAttribute("nbEtudiants", nbEtudiants);
+		getServletContext().getRequestDispatcher("/jspCreationFormulaire.jsp").forward(req, resp);
 	}
 
 	
